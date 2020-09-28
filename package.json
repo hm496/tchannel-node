@@ -1,8 +1,8 @@
 {
-  "name": "tchannel",
+  "name": "tchannel-lite",
   "description": "network multiplexing and framing protocol for RPC or parser drag racing",
   "author": "mranney@uber.com",
-  "version": "4.0.1",
+  "version": "0.0.1",
   "scripts": {
     "lint": "eslint $(git ls-files | grep '.js$')",
     "travis": "npm run check-licence && npm run lint -s && npm run travis-cover -s && npm run check-benchmark -s",
@@ -27,7 +27,7 @@
   "main": "channel",
   "repository": {
     "type": "git",
-    "url": "git@github.com:uber/tchannel-node"
+    "url": "https://github.com/hm496/tchannel-node.git"
   },
   "dependencies": {
     "bufrw": "^1.2.1",
@@ -43,7 +43,6 @@
     "run-parallel": "^1.1.9",
     "run-series": "^1.1.8",
     "safe-json-parse": "^4.0.0",
-    "sse4_crc32": "^6.0.1",
     "thriftrw": "^3.12.0",
     "xorshift": "^1.1.1",
     "xtend": "^4.0.2"

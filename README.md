@@ -1,3 +1,7 @@
+forked from [uber/tchannel-node](https://github.com/uber/tchannel-node)
+
+remove the dependence `sse4_crc32`
+
 # TChannel
 
 network multiplexing and framing protocol for RPC
