@@ -20,7 +20,7 @@
 
 'use strict';
 
-var farmhash = require('farmhash');
+var farmhash = require('../farmhash');
 var Header = require('./header');
 
 // Node.js deprecated Buffer in favor of Buffer.alloc and Buffer.from.
