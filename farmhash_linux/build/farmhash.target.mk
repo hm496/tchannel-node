@@ -9,6 +9,7 @@ DEFS_Debug := \
 	'-DV8_DEPRECATION_WARNINGS=1' \
 	'-D_LARGEFILE_SOURCE' \
 	'-D_FILE_OFFSET_BITS=64' \
+	'-DOPENSSL_NO_PINSHARED' \
 	'-DBUILDING_NODE_EXTENSION' \
 	'-DDEBUG' \
 	'-D_DEBUG' \
@@ -32,7 +33,7 @@ CFLAGS_C_Debug :=
 CFLAGS_CC_Debug := \
 	-fno-rtti \
 	-fno-exceptions \
-	-std=gnu++0x \
+	-std=gnu++1y \
 	-fexceptions \
 	-Wall \
 	-march=native \
@@ -41,13 +42,13 @@ CFLAGS_CC_Debug := \
 	-funroll-loops
 
 INCS_Debug := \
-	-I/home/jenkins/.node-gyp/8.12.0/include/node \
-	-I/home/jenkins/.node-gyp/8.12.0/src \
-	-I/home/jenkins/.node-gyp/8.12.0/deps/openssl/config \
-	-I/home/jenkins/.node-gyp/8.12.0/deps/openssl/openssl/include \
-	-I/home/jenkins/.node-gyp/8.12.0/deps/uv/include \
-	-I/home/jenkins/.node-gyp/8.12.0/deps/zlib \
-	-I/home/jenkins/.node-gyp/8.12.0/deps/v8/include \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/include/node \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/src \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/deps/openssl/config \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/deps/openssl/openssl/include \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/deps/uv/include \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/deps/zlib \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/deps/v8/include \
 	-I$(srcdir)/../nan
 
 DEFS_Release := \
@@ -57,6 +58,7 @@ DEFS_Release := \
 	'-DV8_DEPRECATION_WARNINGS=1' \
 	'-D_LARGEFILE_SOURCE' \
 	'-D_FILE_OFFSET_BITS=64' \
+	'-DOPENSSL_NO_PINSHARED' \
 	'-DBUILDING_NODE_EXTENSION'
 
 # Flags passed to all source files.
@@ -77,7 +79,7 @@ CFLAGS_C_Release :=
 CFLAGS_CC_Release := \
 	-fno-rtti \
 	-fno-exceptions \
-	-std=gnu++0x \
+	-std=gnu++1y \
 	-fexceptions \
 	-Wall \
 	-march=native \
@@ -86,13 +88,13 @@ CFLAGS_CC_Release := \
 	-funroll-loops
 
 INCS_Release := \
-	-I/home/jenkins/.node-gyp/8.12.0/include/node \
-	-I/home/jenkins/.node-gyp/8.12.0/src \
-	-I/home/jenkins/.node-gyp/8.12.0/deps/openssl/config \
-	-I/home/jenkins/.node-gyp/8.12.0/deps/openssl/openssl/include \
-	-I/home/jenkins/.node-gyp/8.12.0/deps/uv/include \
-	-I/home/jenkins/.node-gyp/8.12.0/deps/zlib \
-	-I/home/jenkins/.node-gyp/8.12.0/deps/v8/include \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/include/node \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/src \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/deps/openssl/config \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/deps/openssl/openssl/include \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/deps/uv/include \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/deps/zlib \
+	-I/home/jenkins/.cache/node-gyp/10.22.1/deps/v8/include \
 	-I$(srcdir)/../nan
 
 OBJS := \
