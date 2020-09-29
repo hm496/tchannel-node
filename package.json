@@ -2,7 +2,7 @@
   "name": "tchannel-lite",
   "description": "network multiplexing and framing protocol for RPC or parser drag racing",
   "author": "mranney@uber.com",
-  "version": "0.0.1-beta.4",
+  "version": "0.0.2",
   "scripts": {
     "lint": "eslint $(git ls-files | grep '.js$')",
     "travis": "npm run check-licence && npm run lint -s && npm run travis-cover -s && npm run check-benchmark -s",
